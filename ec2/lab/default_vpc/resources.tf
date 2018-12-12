@@ -29,7 +29,7 @@ resource "aws_instance" "web" {
       user = "ubuntu"
       private_key = "${tls_private_key.we45_test_key.private_key_pem}"
       timeout = "5m"
-      agent = true
+      agent = false
     }
 
     inline = [
