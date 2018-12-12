@@ -53,8 +53,12 @@ commands will detect it and remind you to do so if necessary.
 
 ##### Step 4:
 
+* Get your public IP Address by running: `dig +short myip.opendns.com @resolver1.opendns.com`
+
+* Copy the value generated
+
 * Run `terraform apply`
-    1. It will as you to enter a `public_host`
+    1. It will as you to enter a `public_host`, where you can enter the public IP address you identified
     2. It will ask you to enter **Region**
     3. It will ask a permission to do the actions type `yes` and press enter to continue
     

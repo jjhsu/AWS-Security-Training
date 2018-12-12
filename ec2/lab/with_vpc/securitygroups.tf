@@ -56,6 +56,7 @@ resource "aws_security_group" "internet_http" {
 }
 
 resource "aws_security_group" "public_private_redis_ssh" {
+  name = "Public-private-redis-ssh-${random_string.random_name.result}"
   description = "Allow access to Redis and SSH from Public Subnet TO Private Subnet"
   ingress {
     from_port = 6379
@@ -79,6 +80,7 @@ resource "aws_security_group" "public_private_redis_ssh" {
 }
 
 resource "aws_security_group" "private_egress_http_https" {
+  name = "Private Egress - ${random_string.random_name.result}"
   description = "Allow access to HTTP and HTTPS from private subnet"
   egress {
     from_port = 80

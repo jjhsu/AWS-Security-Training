@@ -42,7 +42,9 @@ resource "aws_instance" "web" {
   }
 }
 
-
+output "check_result" {
+  value = "lynis-report.txt"
+}
 
 
 

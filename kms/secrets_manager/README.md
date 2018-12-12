@@ -11,10 +11,10 @@
 
 ##### Step 2:
 
-*  **cd** into  `/home/vagrant/Desktop/Labs/AWS-Security-Training/kms/data_encryption/lab`
+*  **cd** into  `/home/vagrant/Desktop/Labs/AWS-Security-Training/kms/secrets_manager/lab`
 
     ```commandline
-    cd  /home/vagrant/Desktop/Labs/AWS-Security-Training/kms/data_encryption/lab
+    cd  /home/vagrant/Desktop/Labs/AWS-Security-Training/kms/secrets_manager/lab
     ```
 
 ##### Step 3:
